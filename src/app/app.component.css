@@ -1,0 +1,18 @@
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #147af9;
+    color: white;
+    font-weight: 600;
+}
+.headerIcon {
+    margin: 10px;
+    font-size: 1.5em;
+    font-family: math;
+}
+

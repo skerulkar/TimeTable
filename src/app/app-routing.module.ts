@@ -1,15 +1,29 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { AuthorisedLayoutComponent } from './layout/authorised/authorised-layout/authorised-layout.component';
+import { NgModule, Component } from '@angular/core';
+import { Routes, RouterModule, CanActivate  } from '@angular/router';
+import { 
+  AuthGuardService as AuthGuard 
+} from './auth-guard.service';
+import { 
+  RoleGuardService as RoleGuard 
+} from './role-guard.service';
+import { LoginComponent } from './login/login.component';
+
 
 const routes: Routes = [
-  {
-    path: '',
-    component: AuthorisedLayoutComponent,
-    // children: [
-    //   { path: '', component: LandingPageComponent, pathMatch: 'full'},
-    // ]
-  }
+  { path: '**', component: LoginComponent },
+  // { 
+  //   path: 'profile', 
+  //   component: ProfileComponent, 
+  //   canActivate: [AuthGuard] 
+  // },
+  // { 
+  //   path: 'admin', 
+  //   component: AdminComponent, 
+  //   canActivate: [RoleGuard], 
+  //   data: { 
+  //     expectedRole: 'admin'
+  //   } 
+  // },
 ];
 
 @NgModule({

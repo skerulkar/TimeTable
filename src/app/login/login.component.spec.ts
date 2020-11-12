@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AuthorisedSideNavComponent } from './authorised-side-nav.component';
+import { LoginComponent } from './login.component';
 
-describe('AuthorisedSideNavComponent', () => {
-  let component: AuthorisedSideNavComponent;
-  let fixture: ComponentFixture<AuthorisedSideNavComponent>;
+describe('LoginComponent', () => {
+  let component: LoginComponent;
+  let fixture: ComponentFixture<LoginComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AuthorisedSideNavComponent ]
+      declarations: [ LoginComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AuthorisedSideNavComponent);
+    fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

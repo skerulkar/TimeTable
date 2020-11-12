@@ -1,18 +1,31 @@
-.toolbar {
+header {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 10%;
     display: flex;
     align-items: center;
     background-color: #147af9;
     color: white;
     font-weight: 600;
-}
-.headerIcon {
-    margin: 10px;
-    font-size: 1.5em;
-    font-family: math;
+    justify-content: center;
 }
 
+.router-outlet-div {
+    height: 80%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    background-color: #147af9;
+    color: white;
+    font-weight: 600;
+    justify-content: center;
+}

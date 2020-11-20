@@ -3,9 +3,6 @@ import { Routes, RouterModule, CanActivate  } from '@angular/router';
 import { 
   AuthGuardService as AuthGuard 
 } from './auth-guard.service';
-import { 
-  RoleGuardService as RoleGuard 
-} from './role-guard.service';
 import { LoginComponent } from './login/login.component';
 
 
@@ -15,15 +12,7 @@ const routes: Routes = [
   //   path: 'profile', 
   //   component: ProfileComponent, 
   //   canActivate: [AuthGuard] 
-  // },
-  // { 
-  //   path: 'admin', 
-  //   component: AdminComponent, 
-  //   canActivate: [RoleGuard], 
-  //   data: { 
-  //     expectedRole: 'admin'
-  //   } 
-  // },
+  // }
 ];
 
 @NgModule({

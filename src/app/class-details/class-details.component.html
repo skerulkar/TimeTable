@@ -1,0 +1,22 @@
+<div class="container" style="margin-top: 70px;">
+    <div class="row">
+        <div>
+          <form class="col-sm-12" [formGroup]="form" (ngSubmit)="submit()">
+            <div class="form-group">
+                <div>
+                    <label for="standard">Standard</label>
+                    <input id="standard" type="text" formControlName="standard" placeholder="Enter Standard">
+                </div>
+                <div>
+                    <label for="noOfClass"># Of Divisions</label>
+                    <select formControlName="noOfClass" class="form-control">
+                        <option *ngFor="let noOfClass of noOfClassList">{{noOfClass}}</option>
+                    </select>
+                </div>
+              </div>
+          </form>
+          <button class="button" type="submit" [disabled]="!form.valid">Teacher Details ></button>
+        </div>
+    </div>
+  </div>
+  
